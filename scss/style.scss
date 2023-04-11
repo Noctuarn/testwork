@@ -1,1 +1,18 @@
 @import "base";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+    background-color: $bg-color;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 0.875rem; // 16px
+}
