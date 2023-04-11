@@ -9,10 +9,19 @@
 }
 
 .wrapper{
+    display: flex;
     width: 100%;
     overflow: hidden;
     background-color: $bg-color;
     font-family: "Poppins";
     font-weight: 500;
-    font-size: 0.875rem; // 16px
+    font-size: 0.875rem; // 14px
 }
+
+ul,
+li {
+    list-style: none;
+}
+
+
+@import "sidebar";

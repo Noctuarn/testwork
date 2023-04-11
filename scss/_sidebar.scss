@@ -1,0 +1,104 @@
+.sidebar {
+    width: 20%;
+    min-width: 301px;
+    padding: 36px 23px 76px 28px;
+    background: #fff;
+
+    &__logo {
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 100%;
+        margin-top: 46px;
+    }
+    
+    &__element {
+        width: 100%;
+        display: flex;
+        padding: 11px 14px 11px 11px;
+        justify-content: space-between;
+        align-items: center;
+        transition: all .1s;
+        border-radius: 8px;
+
+        @media (min-width: 768px){
+            &:hover{
+                background: $main-blue;
+            }
+        }
+
+        @media (min-width: 768px){
+            &:hover .element-sidebar__name {
+                color: white;
+            }
+        }
+
+        @media (min-width: 768px){
+            &:hover .element-sidebar__icon_s path {
+                stroke: white;
+            }
+        }
+
+        @media (min-width: 768px){
+            &:hover .element-sidebar__icon_f path {
+                fill: white;
+            }
+        }
+
+        @media (min-width: 768px){
+            &:hover .sidebar-arrow path{
+                stroke: white;
+            }   
+        }
+    }
+
+    &__author {
+    }
+}
+.element-sidebar {
+
+    &__main{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__icon {
+        
+    }
+
+    &__name {
+        color: #9197B3;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+    }
+}
+.author {
+    margin-top: 570px;
+    display: flex;
+    gap: 12px;
+
+    &__image {
+    }
+
+    &__textblock {
+        
+    }
+
+    &__name {
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        color: #000000;
+    }
+
+    &__profession {
+        font-weight: 400;
+        font-size: 0.75rem; //12px
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #757575;
+    }
+}

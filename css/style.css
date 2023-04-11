@@ -7,10 +7,112 @@
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   overflow: hidden;
   background-color: #fafbff;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 0.875rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.sidebar {
+  width: 20%;
+  min-width: 301px;
+  padding: 36px 23px 76px 28px;
+  background: #fff;
+}
+.sidebar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 17px;
+  width: 100%;
+  margin-top: 46px;
+}
+.sidebar__element {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 11px 14px 11px 11px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .sidebar__element:hover {
+    background: #5932EA;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar__element:hover .element-sidebar__name {
+    color: white;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar__element:hover .element-sidebar__icon_s path {
+    stroke: white;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar__element:hover .element-sidebar__icon_f path {
+    fill: white;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar__element:hover .sidebar-arrow path {
+    stroke: white;
+  }
+}
+.element-sidebar__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+.element-sidebar__name {
+  color: #9197B3;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.author {
+  margin-top: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+.author__name {
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.author__profession {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
