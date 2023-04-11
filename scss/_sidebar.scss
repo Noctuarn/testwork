@@ -23,6 +23,7 @@
         align-items: center;
         transition: all .1s;
         border-radius: 8px;
+        cursor: pointer;
 
         @media (min-width: 768px){
             &:hover{
