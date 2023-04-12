@@ -16,6 +16,8 @@
     font-family: "Poppins";
     font-weight: 500;
     font-size: 0.875rem; // 14px
+    color: #000;
+    line-height: 21px;
 }
 
 ul,
@@ -25,3 +27,4 @@ li {
 
 
 @import "sidebar";
+@import "main";

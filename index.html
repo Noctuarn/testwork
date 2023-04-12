@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="app.js"></script>
     <title>Test task</title>
 </head>
 <body>
@@ -136,91 +137,93 @@
                     </div>
                  </div>
                 <table class="customers__table table">
-                    <tr>
-                        <th>Заголовок 1</th>
-                        <th>Заголовок 2</th>
-                        <th>Заголовок 3</th>
-                        <th>Заголовок 4</th>
-                        <th>Заголовок 5</th>
-                        <th>Заголовок 6</th>
+                    <tr class="table__header">
+                        <th>Customer Name</th>
+                        <th>Company</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                        <th>Status</th>
                     </tr>
                     <tr>
-                        <td>Рядок 1, комірка 1</td>
-                        <td>Рядок 1, комірка 2</td>
-                        <td>Рядок 1, комірка 3</td>
-                        <td>Рядок 1, комірка 4</td>
-                        <td>Рядок 1, комірка 5</td>
-                        <td>Рядок 1, комірка 6</td>
+                        <td class="table__element">Jane Cooper</td>
+                        <td class="table__element">Microsoft</td>
+                        <td class="table__element">(225) 555-0118</td>
+                        <td class="table__element">jane@microsoft.com</td>
+                        <td class="table__element">United States</td>
+                        <td class="table__element"><button class="btn inactive-btn">Inactive</button></td>
                     </tr>
                     <tr>
-                        <td>Рядок 2, комірка 1</td>
-                        <td>Рядок 2, комірка 2</td>
-                        <td>Рядок 2, комірка 3</td>
-                        <td>Рядок 2, комірка 4</td>
-                        <td>Рядок 2, комірка 5</td>
-                        <td>Рядок 2, комірка 6</td>
+                        <td class="table__element">Floyd Miles</td>
+                        <td class="table__element">Yahoo</td>
+                        <td class="table__element">(205) 555-0100</td>
+                        <td class="table__element">floyd@yahoo.com</td>
+                        <td class="table__element">Kiribati</td>
+                        <td class="table__element"><button class="btn inactive-btn">Inactive</button></td>
                     </tr>
                     <tr>
-                        <td>Рядок 3, комірка 1</td>
-                        <td>Рядок 3, комірка 2</td>
-                        <td>Рядок 3, комірка 3</td>
-                        <td>Рядок 3, комірка 4</td>
-                        <td>Рядок 3, комірка 5</td>
-                        <td>Рядок 3, комірка 6</td>
+                        <td class="table__element">Ronald Richards</td>
+                        <td class="table__element">Adobe</td>
+                        <td class="table__element">(302) 555-0107</td>
+                        <td class="table__element">ronald@adobe.com</td>
+                        <td class="table__element">Israel</td>
+                        <td class="table__element"><button class="btn inactive-btn">Inactive</button></td>
                     </tr>
                     <tr>
-                        <td>Рядок 4, комірка 1</td>
-                        <td>Рядок 4, комірка 2</td>
-                        <td>Рядок 4, комірка 3</td>
-                        <td>Рядок 4, комірка 4</td>
-                        <td>Рядок 4, комірка 5</td>
-                        <td>Рядок 4, комірка 6</td>
+                        <td class="table__element">Marvin McKinney</td>
+                        <td class="table__element">Tesla</td>
+                        <td class="table__element">(252) 555-0126</td>
+                        <td class="table__element">marvin@tesla.com</td>
+                        <td class="table__element">Iran</td>
+                        <td class="table__element"><button class="btn inactive-btn">Inactive</button></td>
                     </tr>
                     <tr>
-                        <td>Рядок 5, комірка 1</td>
-                        <td>Рядок 5, комірка 2</td>
-                        <td>Рядок 5, комірка 3</td>
-                        <td>Рядок 5, комірка 4</td>
-                        <td>Рядок 5, комірка 5</td>
-                        <td>Рядок 5, комірка 6</td>
+                        <td class="table__element">Jerome Bell</td>
+                        <td class="table__element">Google</td>
+                        <td class="table__element">(629) 555-0129</td>
+                        <td class="table__element">jerome@google.com</td>
+                        <td class="table__element">Réunion</td>
+                        <td class="table__element"><button class="btn inactive-btn">Inactive</button></td>
                     </tr>
                     <tr>
-                        <td>Рядок 6, комірка 1</td>
-                        <td>Рядок 6, комірка2</td>
-                        <td>Рядок 6, комірка 3</td>
-                        <td>Рядок 6, комірка 4</td>
-                        <td>Рядок 6, комірка 5</td>
-                        <td>Рядок 6, комірка 6</td>
+                        <td class="table__element">Kathryn Murphy</td>
+                        <td class="table__element">Microsoft</td>
+                        <td class="table__element">(406) 555-0120</td>
+                        <td class="table__element">kathryn@microsoft.com</td>
+                        <td class="table__element">Curaçao</td>
+                        <td class="table__element"><button class="btn inactive-btn">Inactive</button></td>
                         
-                        </tr>
-                        <tr>
-                            <td>Рядок 7, комірка 1</td>
-                            <td>Рядок 7, комірка 2</td>
-                            <td>Рядок 7, комірка 3</td>
-                            <td>Рядок 7, комірка 4</td>
-                            <td>Рядок 7, комірка 5</td>
-                            <td>Рядок 7, комірка 6</td>
-                        </tr>
-                        <tr>
-                            <td>Рядок 8, комірка 1</td>
-                            <td>Рядок 8, комірка 2</td>
-                            <td>Рядок 8, комірка 3</td>
-                            <td>Рядок 8, комірка 4</td>
-                            <td>Рядок 8, комірка 5</td>
-                            <td>Рядок 8, комірка 6</td>
-                        </tr>
+                    </tr>
+
+                    <tr>
+                        <td class="table__element">Jacob Jones</td>
+                        <td class="table__element">Yahoo</td>
+                        <td class="table__element">(208) 555-0112</td>
+                        <td class="table__element">jacob@yahoo.com</td>
+                        <td class="table__element">Brazil</td>
+                        <td class="table__element"><button class="btn inactive-btn">Inactive</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table__element">Kristin Watson</td>
+                        <td class="table__element">Facebook</td>
+                        <td class="table__element">(704) 555-0127</td>
+                        <td class="table__element">kristin@facebook.com</td>
+                        <td class="table__element">Åland Islands</td>
+                        <td class="table__element"><button class="btn inactive-btn">Inactive</button></td>
+                    </tr>
                 </table>
 
                 <div class="customer__footer">
                     <p class="customer__info">Showing data 1 to 8 of  256K entries</p>
                     <div class="customer__buttons buttons-customer">
                         <button class="buttons-customer__element"><</button>
-                        <button class="buttons-customer__element">1</button>
-                        <button class="buttons-customer__element">2</button>
-                        <button class="buttons-customer__element">3</button>
-                        <button class="buttons-customer__element">4</button>
+                        <button class="buttons-customer__element buttons-customer__element_main buttons-customer__element_active">1</button>
+                        <button class="buttons-customer__element buttons-customer__element_main">2</button>
+                        <button class="buttons-customer__element buttons-customer__element_main">3</button>
+                        <button class="buttons-customer__element buttons-customer__element_main">4</button>
                         ...
-                        <button class="buttons-customer__element">40</button>
+                        <button class="buttons-customer__element buttons-customer__element_main">40</button>
                         <button class="buttons-customer__element">></button>
                     </div>
                 </div>
