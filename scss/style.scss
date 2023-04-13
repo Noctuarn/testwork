@@ -18,6 +18,11 @@
     font-size: 0.875rem; // 14px
     color: #000;
     line-height: 21px;
+    
+
+    @media (max-width:1200px){
+        flex-direction: column;
+    }
 }
 
 ul,

@@ -4,7 +4,13 @@
     padding: 36px 23px 76px 28px;
     background: #fff;
 
-    &__logo {
+    @media (max-width:1200px){
+        width: 100%;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__menu {
@@ -13,6 +19,14 @@
         gap: 17px;
         width: 100%;
         margin-top: 46px;
+
+        @media (max-width:1200px){
+            display: none;
+        }
+
+        &.open{
+            display: flex;
+        }
     }
     
     &__element {
@@ -59,6 +73,70 @@
     &__author {
     }
 }
+
+.burger {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+
+    
+    @media (min-width:1200px){
+        display: none;
+    }
+
+    &__body {
+        width: 40px;
+        height: 2px;
+        background: #000;
+        border-radius: 2px;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.burger__body::before,
+.burger__body::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #000;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+}
+
+.burger__body::before {
+    transform: translateY(-10px);
+}
+
+.burger__body::after {
+    transform: translateY(10px);
+}
+
+
+.burger.open .burger__body {
+    transform: translateX(-44px);
+    background: transparent;
+}
+
+.burger.open .burger__body::before {
+    transform: rotate(45deg) translate(32px, -32px);
+    background-color: #000;
+}
+
+.burger.open .burger__body::after {
+    transform: rotate(-45deg) translate(32px, 32px);
+    background-color: #000;
+}
+
 .element-sidebar {
 
     &__main{
@@ -82,11 +160,8 @@
     display: flex;
     gap: 12px;
 
-    &__image {
-    }
-
-    &__textblock {
-        
+    @media (max-width:1200px){
+        margin-top: 50px;
     }
 
     &__name {

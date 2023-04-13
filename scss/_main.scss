@@ -1,6 +1,10 @@
 .main {
     padding: 41px 0 0 66px;
 
+    @media (max-width:800px){
+      padding-left: 10px;
+    }
+
     &__title {
         font-size: 1.5rem; //24px
         line-height: 36px;
@@ -11,10 +15,17 @@
         background: #FFFFFF;
         box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
         border-radius: 30px;
-        padding: 29px 0 41px;
+        padding: 29px 45px 41px 37px;
         width: 968px;
         display: flex;
         flex-direction: column;
+
+        @media (max-width:1200px){
+            width: 100%;
+            margin: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 }
 .customers {
@@ -23,13 +34,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0px 54px 40px 37px;
+        margin-bottom: 36px;
+
+        @media (max-width:600px){
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
     }
 
     &__textblock {
         display: flex;
         flex-direction: column;
         gap: 7px;
+
+        @media (max-width:800px){
+            margin-left: 20px;
+        }
     }
 
     &__title {
@@ -55,6 +76,11 @@
         height: 38px;
         padding-left: 8px;
         border-radius: 10px;
+        margin-right: 9px;
+
+        @media (max-width:600px){
+            width: 100%;
+        }
 
         input{
             width: 80%;
@@ -70,9 +96,8 @@
 
     &__table {
         border-collapse: collapse;
-        width: 90%;
-        align-self: center;
-        margin-bottom: 32px;
+        margin-bottom: 29px;
+        overflow: scroll;
     }
 }
 .table {
@@ -92,16 +117,29 @@ th{
     color: #B5B7C0;
     padding-bottom: 14px;
     border-bottom: 1px solid #EEEEEE;
+    line-height: 21px;
 }
 
 tr{
-    margin: 0 45px 0 37px ;
+    // margin: 0 45px 0 37px;
 }
 
 td {
     border-bottom: 1px solid #EEEEEE;
-    padding: 20px 0;
+    padding: 19px 0;
     color: #292D32;
+}
+
+td,
+th{
+    @media (max-width:900px){
+        font-size: 10px;
+        padding: 15px 0;
+    }
+
+    @media (max-width:400px){
+        font-size: 9px;
+    }
 }
 
 .customer {
@@ -109,12 +147,15 @@ td {
     &__footer {
         display: flex;
         justify-content: space-between;
-        padding: 0 41px 0 37px;
     }
 
     &__info {
         letter-spacing: -0.01em;
         color: #B5B7C0;
+
+        @media (max-width:600px){
+            display: none;
+        }
     }
 
     &__buttons {
@@ -134,7 +175,7 @@ td {
         font-size: 0.75rem; //12px
     }
 
-    
+
     &__element_active,
     &__element_main:hover {
         background: $main-blue;
@@ -153,10 +194,22 @@ td {
     background: $inactive;
     color: $inactive-text;
     border: 1px solid $inactive-text;
+
+    @media (max-width:600px){
+        width: 50px;
+        font-size: 10px;
+    }
 }
 
 .btn_active{
     color: $active-text;
     border: 1px solid $active;
     background: rgba(22, 192, 152, 0.38);
+}
+
+.country,
+.company{
+    @media (max-width:500px){
+        display: none;
+    }
 }

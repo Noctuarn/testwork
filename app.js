@@ -33,7 +33,22 @@ navButtons.addEventListener("click", (e) => {
 
         e.target.classList.add('buttons-customer__element_active');
     }
-
-
     }
 )
+
+// Burger menu
+
+function burgerMenu(){
+
+    const burger = document.querySelector('.burger'),
+          menu = document.querySelector('.sidebar__menu'),
+          body = document.body;
+
+    burger.addEventListener('click', ()=> {
+        burger.classList.toggle('open');
+        menu.classList.toggle('open');
+        body.classList.toggle('unscrolling');
+    })
+}
+
+burgerMenu();
